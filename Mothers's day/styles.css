@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffe0ec, #cce0f4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.card{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow:0 10px 25px ragba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 1.3s ease-in-out;
+}
+.card h1 , .card h2{    
+    font-size: 18px;
+    color: #e91e63;
+    margin-bottom: 20px;
+
+}
+.card p{
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.card-img{
+    width: 80%;
+    max-height: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+
+}
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin:5px;
+}
+.btn:hover{
+    background-color: #d81b60;
+}.nav{
+    margin-top: 10px;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
